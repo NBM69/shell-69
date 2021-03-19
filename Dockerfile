@@ -66,7 +66,6 @@ RUN gem install rmega
 #install yt_dlp
 RUN pip3 install setuptools && \
 pip3 install https://github.com/yt-dlp/yt-dlp/archive/master.zip
-pip install --upgrade git+https://github.com/yt-dlp/yt-dlp
 
 # Copies config(if it exists)
 COPY . .
