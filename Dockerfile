@@ -51,7 +51,7 @@ RUN curl https://rclone.org/install.sh
 
 # Copies config(if it exists)
 COPY . .
-RUN chmod +x g && chmod +x db.sh
+RUN chmod +x g
 
 #ngrok
 RUN aria2c https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip ngrok-stable-linux-amd64.zip && mv ngrok /usr/bin/ && chmod +x /usr/bin/ngrok
