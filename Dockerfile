@@ -49,6 +49,10 @@ ENV TZ Asia/Kolkata
 # rclone
 RUN curl https://rclone.org/install.sh
 
+#drive downloader
+RUN aria2c https://github.com/jaskaranSM/drive-dl-go/releases/download/1.1/drive-dl-go-linux-64bit.zip && \
+    unzip drive-dl-go-linux-64bit.zip && mv linux-64bit/drivedl /usr/bin/ && chmod +x /usr/bin/drivedl && rm -r linux-64bit
+
 # Copies config(if it exists)
 COPY . .
 RUN chmod +x g
