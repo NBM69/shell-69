@@ -59,6 +59,10 @@ RUN aria2c https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && 
 #install rmega
 RUN gem install rmega
 
+#install yt_dlp
+RUN pip3 install setuptools && \
+pip3 install https://github.com/yt-dlp/yt-dlp/archive/master.zip
+
 # Copies config(if it exists)
 COPY . .
 
