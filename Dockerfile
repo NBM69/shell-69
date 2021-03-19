@@ -1,4 +1,4 @@
-FROM python:3.8.5-slim-buster
+FROM lzzy12/mega-sdk-python:latest
 
 # Install all the required packages
 WORKDIR /usr/src/app
