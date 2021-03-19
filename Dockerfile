@@ -46,8 +46,8 @@ ENV DEBIAN_FRONTEND noninteractive
 # sets the TimeZone, to be used inside the container
 ENV TZ Asia/Kolkata
 
-# rclone ,gclone and fclone
-RUN curl https://rclone.org/install.sh | bash && \
+# rclone
+RUN curl https://rclone.org/install.sh
 
 # Copies config(if it exists)
 COPY . .
